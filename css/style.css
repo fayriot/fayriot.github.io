@@ -1,0 +1,41 @@
+* {
+    font-family: monospace, monospace;
+}
+
+body {
+    background: #333333;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    height: 64px;
+    width: fit-content;
+    border: 2px dashed transparent;
+    padding: 0 14px;
+    font-size: 30px;
+}
+
+.link:hover {
+    border: 2px dashed #ff7b9c;
+}
+
+
+.link__image {
+    display: block;
+    position: relative;
+    margin-right: 8px;
+}
+
+.link__image::after {
+    display: block;
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background: #990000;
+}
